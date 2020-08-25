@@ -1,6 +1,7 @@
 {
     "name": "biwankaifa/redis",
     "description": "Redis",
+    "license": "MIT",
     "authors": [
         {
             "name": "彼玩网络",
