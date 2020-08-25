@@ -1,0 +1,19 @@
+{
+    "name": "biwankaifa/redis",
+    "description": "Redis",
+    "authors": [
+        {
+            "name": "过骏",
+            "email": "guojun@joymaking.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-redis": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "jinyicheng\\redis\\": "src/"
+        }
+    }
+}
