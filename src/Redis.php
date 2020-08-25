@@ -56,7 +56,7 @@ class Redis
     /**
      * 获取类单例
      *
-     * @param int $db_number
+     * @param ?int $db_number
      * @return OriginalRedis
      */
     public static function db($db_number=null)
