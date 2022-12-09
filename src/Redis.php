@@ -45,7 +45,9 @@ class Redis
         $this->redis = new OriginalRedis();
         $func = $options['persistent'] ? 'pconnect' : 'connect';     //长链接
         $this->redis->$func($options['host'], $options['port'], $options['timeout']);
-        $this->redis->auth($options['password']);
+        if ($options['password'] != "") {
+            $this->redis->auth($options['password']);
+        }
         $this->redis->select($db_number);
     }
 
